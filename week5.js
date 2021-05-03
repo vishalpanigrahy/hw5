@@ -76,8 +76,7 @@ window.addEventListener('DOMContentLoaded', async function(event) {
         dayF = dailyForecast.forecastday
 
         // - Using for-loop to display day-wise forecast
-        for(var i=0 in dayF){ 
-          // tried the conevntional let i=0...i++ format but it showed error that identifier has already been declared. Hence, looked online and tried this for-loop syntax 
+        for(let i=0; i<dayF.length; i++){ 
           // Display day-wise data in the forecast element
           forecastElement.insertAdjacentHTML(`beforeend`,`
           <div class="text-center space-y-8">
